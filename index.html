@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Nyein Chan Aung | Web Pentester</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --card: #111827;
+      --accent: #00ff9c;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Inter, sans-serif;
+      background: radial-gradient(circle at top, #0f172a, #020617);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 80px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #020617, #020617 40%, #022c22);
+    }
+
+    header h1 {
+      font-family: Orbitron, monospace;
+      font-size: 3rem;
+      color: var(--accent);
+      letter-spacing: 2px;
+    }
+
+    header p {
+      color: var(--muted);
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 26px;
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      text-decoration: none;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: var(--accent);
+      color: #000;
+    }
+
+    section {
+      padding: 70px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      font-family: Orbitron, monospace;
+      color: var(--accent);
+      margin-bottom: 30px;
+      border-left: 4px solid var(--accent);
+      padding-left: 12px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 25px;
+      border-radius: 12px;
+      border: 1px solid #1f2933;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      border-color: var(--accent);
+      box-shadow: 0 0 20px rgba(0,255,156,0.15);
+    }
+
+    .tag {
+      display: inline-block;
+      background: #022c22;
+      color: var(--accent);
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      margin: 3px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      border-top: 1px solid #1f2933;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .terminal {
+      background: #020617;
+      border: 1px solid #1f2933;
+      border-radius: 10px;
+      padding: 20px;
+      font-family: monospace;
+      color: #00ff9c;
+      box-shadow: inset 0 0 30px rgba(0,255,156,0.05);
+    }
+
+    .blink {
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      0%,50%,100% { opacity: 1; }
+      25%,75% { opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Nyein Chan Aung</h1>
+  <p>
+    Web Application Penetration Tester | Ethical Hacker | Security Researcher  
+    <br />
+    Specialized in finding real-world vulnerabilities and improving web security.
+  </p>
+  <a href="#contact" class="btn">Hire Me</a>
+</header>
+
+<section>
+  <h2>🧠 About Me</h2>
+  <div class="terminal">
+    > name: Nyein Chan Aung<br>
+    > role: Web Pentester<br>
+    > focus: OWASP Top 10, Bug Bounty, CTF<br>
+    > mindset: Think like an attacker. Secure like a defender.<span class="blink">_</span>
+  </div>
+</section>
+
+<section>
+  <h2>🛠 Skills & Tools</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Web Vulnerabilities</h3>
+      <span class="tag">SQL Injection</span>
+      <span class="tag">XSS</span>
+      <span class="tag">CSRF</span>
+      <span class="tag">SSRF</span>
+      <span class="tag">IDOR</span>
+      <span class="tag">RCE</span>
+      <span class="tag">File Upload</span>
+    </div>
+
+    <div class="card">
+      <h3>Recon & Scanning</h3>
+      <span class="tag">Nmap</span>
+      <span class="tag">Amass</span>
+      <span class="tag">Subfinder</span>
+      <span class="tag">Httpx</span>
+      <span class="tag">Nuclei</span>
+    </div>
+
+    <div class="card">
+      <h3>Exploitation</h3>
+      <span class="tag">Burp Suite</span>
+      <span class="tag">SQLmap</span>
+      <span class="tag">Metasploit</span>
+      <span class="tag">Custom Scripts</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>💻 Projects & Labs</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>DVWA Pentest</h3>
+      <p>
+        Full exploitation of DVWA covering SQLi, XSS, CSRF, and Command Injection.
+      </p>
+      <span class="tag">Lab</span>
+      <span class="tag">Report</span>
+    </div>
+
+    <div class="card">
+      <h3>CTF Writeups</h3>
+      <p>
+        Solved multiple CTF challenges with detailed methodology and payloads.
+      </p>
+      <span class="tag">CTF</span>
+      <span class="tag">Writeup</span>
+    </div>
+
+    <div class="card">
+      <h3>Bug Bounty Practice</h3>
+      <p>
+        Tested real-world targets on platforms like HackerOne & Bugcrowd (practice & labs).
+      </p>
+      <span class="tag">Recon</span>
+      <span class="tag">Web</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>📄 Certifications & Learning</h2>
+  <div class="grid">
+    <div class="card">
+      <ul>
+        <li>OWASP Top 10 Training</li>
+        <li>TryHackMe / Hack The Box</li>
+        <li>Web Security Self-Study</li>
+        <li>CTF & Lab Practice</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>📬 Contact</h2>
+  <div class="card">
+    <p>
+      Email: kodarkweb@gmail.com<br>
+      GitHub: github.com/yourusername<br>
+      LinkedIn: linkedin.com/in/yourname
+    </p>
+    <p>
+      Available for freelance pentesting, internships, and junior security roles.
+    </p>
+  </div>
+</section>
+
+<footer>
+  © 2026 Nyein Chan Aung — Web Pentester Portfolio  
+  <br>
+  Built for security professionals.
+</footer>
+
+</body>
+</html>
