@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+/* ===== BODY & MATRIX BACKGROUND ===== */
+body {
+    background: transparent;
+    color: white;
+    overflow-x: hidden;
+}
+
+#matrixCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* ===== HEADER ===== */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background: transparent;
+}
+
+.logo {
+    font-size: 24px;
+    color: #00ff00;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 0 0 10px #00ff00;
+}
+
+.navbar a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #00ff00;
+    text-shadow: 0 0 10px #00ff00;
+}
+
+/* ===== HOME SECTION ===== */
+.home {
+    height: 100vh;
+    padding: 0 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.home-content h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.home-content p {
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+/* ===== NEON TEXT ===== */
+h1, h2 {
+    color: #00ff00;
+    text-shadow:
+        0 0 5px #00ff00,
+        0 0 15px #00ff00,
+        0 0 30px #00ff00;
+}
+
+.pro-text {
+    color: #00ff00;
+    text-shadow: 0 0 10px #00ff00;
+}
+
+/* ===== SOCIAL ICONS ===== */
+.home-sci a {
+    color: #00ff00;
+    margin-right: 15px;
+    font-size: 22px;
+    text-shadow: 0 0 10px #00ff00;
+    transition: 0.3s;
+}
+
+.home-sci a:hover {
+    text-shadow:
+        0 0 10px #00ff00,
+        0 0 20px #00ff00,
+        0 0 40px #00ff00;
+    transform: scale(1.2);
+}
+
+/* ===== PROFILE IMAGE (NEON PULSE) ===== */
+.home-img img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 3px solid #00ff00;
+    box-shadow:
+        0 0 10px #00ff00,
+        0 0 20px #00ff00,
+        0 0 40px #00ff00;
+    animation: neonPulse 2s infinite alternate;
+}
+
+@keyframes neonPulse {
+    from {
+        box-shadow:
+            0 0 10px #00ff00,
+            0 0 20px #00ff00,
+            0 0 40px #00ff00;
+    }
+    to {
+        box-shadow:
+            0 0 20px #00ff00,
+            0 0 40px #00ff00,
+            0 0 80px #00ff00;
+    }
+}
+
+/* ===== GENERIC SECTION ===== */
+.section {
+    padding: 120px 10%;
+    text-align: center;
+}
+
+/* ===== VULNERABILITIES / CVE ===== */
+#vulnerabilities h2,
+#vulnerabilities h3,
+#vulnerabilities p {
+    text-shadow: 0 0 10px #00ff00;
+}
+
+#vulnerabilities .vulnerabilities-box {
+    border: 1px solid #00ff00;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 25px auto;
+    max-width: 650px;
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow:
+        0 0 10px #00ff00,
+        0 0 30px rgba(0,255,0,0.4);
+    transition: 0.3s;
+}
+
+#vulnerabilities .vulnerabilities-box:hover {
+    box-shadow:
+        0 0 25px #00ff00,
+        0 0 70px #00ff00;
+    transform: translateY(-5px);
+}
+
+#vulnerabilities a.btn-box {
+    border: 1px solid #00ff00;
+    color: #00ff00;
+    padding: 8px 16px;
+    margin: 10px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #00ff00;
+    transition: 0.3s;
+}
+
+#vulnerabilities a.btn-box:hover {
+    box-shadow:
+        0 0 20px #00ff00,
+        0 0 40px #00ff00;
+    background: rgba(0,255,0,0.1);
+}
+
+/* ===== HALL OF FAME ===== */
+#hof h2,
+#hof h3,
+#hof p {
+    text-shadow: 0 0 10px #00ff00;
+}
+
+#hof .hof-box {
+    border: 1px solid #00ff00;
+    padding: 25px;
+    margin: 25px auto;
+    max-width: 650px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow:
+        0 0 10px #00ff00,
+        0 0 30px rgba(0,255,0,0.4);
+    transition: 0.3s;
+}
+
+#hof .hof-box:hover {
+    box-shadow:
+        0 0 20px #00ff00,
+        0 0 60px #00ff00;
+    transform: translateY(-5px);
+}
+
+/* ===== CERTIFICATE SECTION ===== */
+.certificate {
+    padding: 120px 10%;
+    text-align: center;
+}
+
+.certificate-gallery {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.certificate-gallery img {
+    max-width: 400px;
+    border: 2px solid #00ff00;
+    border-radius: 10px;
+    box-shadow:
+        0 0 10px #00ff00,
+        0 0 25px #00ff00;
+    transition: 0.3s;
+}
+
+.certificate-gallery img:hover {
+    box-shadow:
+        0 0 20px #00ff00,
+        0 0 50px #00ff00,
+        0 0 100px #00ff00;
+    transform: scale(1.03);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-img {
+        margin-top: 40px;
+    }
+}
