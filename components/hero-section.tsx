@@ -88,7 +88,7 @@ export function HeroSection() {
               <div className="relative w-80 h-80 rounded-3xl overflow-hidden border-2 border-border bg-card shadow-2xl">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10" />
                 <img
-                  src="https://github.com/Mr-UN533N/nyeinchanaung/blob/main/header.jpg?raw=true"
+                  src="https://raw.githubusercontent.com/Mr-UN533N/nyeinchanaung/refs/heads/main/header.jpg"
                   alt="Alex Chen - Security Researcher"
                   className="w-full h-full object-cover"
                 />
