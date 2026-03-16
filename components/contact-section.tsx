@@ -144,7 +144,7 @@ export function ContactSection() {
                   </div>
                   <div>
                     <p className="font-medium text-foreground">LinkedIn</p>
-                    <p className="text-sm">gefo-amd-977b761aa/</p>
+                    <p className="text-sm">gefo-amd-977b761aa</p>
                   </div>
                 </Link>
                 <Link
