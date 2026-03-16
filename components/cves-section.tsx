@@ -56,8 +56,7 @@ export function CVEsSection() {
             Published Vulnerabilities
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Common Vulnerabilities and Exposures (CVEs) I have discovered and 
-            responsibly disclosed to vendors.
+            A list of Common Vulnerabilities and Exposures (CVEs) that I have identified and responsibly disclosed to affected vendors and security teams.
           </p>
         </div>
 
