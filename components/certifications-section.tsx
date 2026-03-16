@@ -4,7 +4,7 @@ const certifications = [
     fullName: "Senior Web Security Certified Professional",
     issuer: "Creatigon",
     year: "2024",
-    image: "https://nyeinchanaung-steel.vercel.app/certi2.jpg",
+    image: "https://raw.githubusercontent.com/Mr-UN533N/nyeinchanaung/refs/heads/main/certi2.jpg",
     description: "Advanced web application security certification focused on whitebox penetration testing and source code analysis.",
   },
   {
@@ -12,7 +12,7 @@ const certifications = [
     fullName: "Junior Web Security Certified",
     issuer: "Creatigon",
     year: "2023",
-    image: "https://nyeinchanaung-steel.vercel.app/certi1.png",
+    image: "https://raw.githubusercontent.com/Mr-UN533N/nyeinchanaung/refs/heads/main/certi1.jpg",
     description: "Hands-on Web penetration testing certification demonstrating ability to compromise systems in a controlled environment.",
   },
 
