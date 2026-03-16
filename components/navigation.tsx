@@ -24,7 +24,7 @@ export function Navigation() {
         <div className="flex items-center justify-between h-16">
           <Link href="#home" className="flex items-center gap-2 group">
             <Shield className="h-6 w-6 text-primary transition-colors group-hover:text-accent" />
-            <span className="font-semibold text-foreground">Alex Chen</span>
+            <span className="font-semibold text-foreground">NyeinChanAung</span>
           </Link>
 
           {/* Desktop Navigation */}
